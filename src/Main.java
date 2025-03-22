@@ -32,7 +32,7 @@ public class Main {
                     System.out.println(passwordChecker.verify(input) ? "Подходит!" : "Не подходит!");
                 }
             }
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalStateException e) {
             System.out.println(e.getMessage());
         }
     }

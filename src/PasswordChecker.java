@@ -22,7 +22,7 @@ public class PasswordChecker {
 
     public boolean verify(String password) {
         if (minPasswordLength == -1 || maxRepeats == -1) {
-            throw new IllegalArgumentException("Не установлены критерии проверки");
+            throw new IllegalStateException("Не установлены критерии проверки");
         }
         if (password.length() < minPasswordLength) {
             return false;
